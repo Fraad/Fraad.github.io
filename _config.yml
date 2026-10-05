@@ -1,0 +1,32 @@
+# --- Site settings: edit these ---
+title: Frederik Holmslund Jørgensen
+description: Notes on probability, statistics and quantitative finance.
+author: Frederik Holmslund Jørgensen
+github_username: Fraad
+
+# For a user site (repo named Fraad.github.io) keep baseurl empty.
+# For a project site (any other repo name, e.g. "blog"), set baseurl: "/blog".
+url: "https://fraad.github.io"
+baseurl: ""
+
+# --- Build settings ---
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+permalink: /:year/:month/:title/
+show_excerpts: true
+
+minima:
+  date_format: "%-d %B %Y"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
